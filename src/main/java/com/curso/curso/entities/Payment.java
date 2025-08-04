@@ -7,6 +7,8 @@ import java.util.Objects;
 import org.hibernate.annotations.Fetch;
 import org.hibernate.annotations.FetchMode;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -26,6 +28,7 @@ public class Payment implements Serializable{
 	private Long id;
 	private Instant moment;
 	
+	@JsonIgnore
 	@OneToOne @Fetch(FetchMode.JOIN)
 	@MapsId
 	private Order order;
