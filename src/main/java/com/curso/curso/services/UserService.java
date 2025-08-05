@@ -15,8 +15,8 @@ public class UserService {
 	@Autowired
 	private UserRepository repository;
 	
-	public List<User> readAll(){
-		return repository.findAll();
+	public User creat(User obj) {
+		return repository.save(obj);
 	}
 	
 	public User read(Long id) {
@@ -24,11 +24,26 @@ public class UserService {
 		return obj.get();
 	}
 	
-	public User creat(User obj) {
-		return repository.save(obj);
+	public User update(Long id, User obj) {
+		User entity = read(id);
+		updateData(entity, obj);
+		return repository.save(entity);
 	}
 	
 	public void delete(Long id) {
 		repository.deleteById(id);
+	}
+	
+	public List<User> readAll(){
+		return repository.findAll();
+	}
+	
+	private void updateData(User entity, User obj) {
+		entity.setName(obj.getName());
+		
+		entity.setEmail(obj.getEmail());
+		
+		entity.setPhone(obj.getPhone());
+		
 	}
 }
