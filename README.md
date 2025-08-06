@@ -4,15 +4,15 @@ Este projeto é uma API RESTful desenvolvida em **Java com Spring Boot**, com fo
 
 ---
 
-## 📌 Objetivos do Projeto
+## 📌 Sobre o Projeto
 
-- Criar um projeto Spring Boot Java;
-- Implementar um modelo de domínio com entidades relacionadas;
-- Estruturar a aplicação nas camadas: **Resource**, **Service** e **Repository**;
-- Configurar um banco de dados de teste usando **H2**;
-- Povoar automaticamente o banco de dados com dados de exemplo;
-- Implementar operações **CRUD (Create, Retrieve, Update, Delete)**;
-- Aplicar **tratamento de exceções** com respostas padronizadas.
+- Criação de um projeto Spring Boot Java;
+- Implementação de um modelo de domínio com entidades relacionadas;
+- Estruturação da aplicação nas camadas: **Resource**, **Service** e **Repository**;
+- Configuração de um banco de dados de teste usando **H2**;
+- Povoação automatica do banco de dados com dados de exemplo;
+- Implementação de operações **CRUD (Create, Retrieve, Update, Delete)**;
+- Aplicação de **tratamento de exceções** com respostas padronizadas.
 
 ---
 
